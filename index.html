@@ -33,79 +33,61 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-  <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"
+  <link href="style/index.css" type="text/css" rel="stylesheet" media="screen,projection"
   />
 </head>
 
-<body class="black">
-  <nav class="black nav-center nav-extended">
-    <div class="nav-wrapper">
-      <div id="logo-row" class="row">
-        <span href="#" id="brand-logo" class="brand-logo center uppercase">kamehameha</span>
-      </div>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <div class="row uppercase">
-        <ul id="nav-mobile" class="hide-on-med-and-down">
-          <li><a href="https://soundcloud.com/kamehamehamusic">music</a></li>
-          <li><a href="#">tour</a></li>
-          <li><a href="https://kamehamehamusic.bandcamp.com">shop</a></li>
-          <li><a href="mailto:kamehameha.nyc@gmail.com">contact</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="https://soundcloud.com/kamehamehamusic">music</a></li>
-          <li><a href="#">tour</a></li>
-          <li><a href="https://kamehamehamusic.bandcamp.com">shop</a></li>
-          <li><a href="mailto:kamehameha.nyc@gmail.com">contact</a></li>
-        </ul>
-      </div>
+<body>
+  <video controls="true" playsinline autoplay muted loop poster="img/video-placeholder.png"
+    id="bgvid" type="video/mp4">
+      </video>
+  <nav>
+    <div href="#" id="title" class="center uppercase">
+      kamehameha
+    </div>
+    </div>
+    <div id="nav-container" class="uppercase center">
+      <div class="nav-item"><a href="https://soundcloud.com/kamehamehamusic">music</a></div>
+      <div class="nav-item"><a href="#">tour</a></div>
+      <div class="nav-item"><a href="https://kamehamehamusic.bandcamp.com">shop</a></div>
+      <div class="nav-item"><a href="mailto:kamehameha.nyc@gmail.com">contact</a></div>
     </div>
   </nav>
   <main>
-    <video playsinline autoplay muted loop poster="img/video-placeholder.png" id="bgvid"
-      class="responsive-video">
-      </video>
-    <div id="header">
-      <div id="header-content" class="white-text center uppercase">
-        <img src="img/mammals.svg"/>
-      </div>
+    <div id="mammals-img-container">
+      <img id="mammals-img" src="img/mammals.svg" />
     </div>
   </main>
 
-  <footer class="black page-footer">
-    <div class="container">
-      <div class="section row">
-        <div class="col">
-          <a target="blank" href="https://instagram.com/kamehamehamusic">
-            <span class="social-icon instagram-icon"></span>
-          </a>
-        </div>
-        <div class="col">
-          <a target="blank" href="https://www.facebook.com/kamehamehamusic/">
-            <span class="social-icon facebook-icon"></span>
-          </a>
-        </div>
-        <div class="col">
-          <a target="blank" href="https://twitter.com/kamehamehamusic">
-            <span class="social-icon twitter-icon"></span>
-          </a>
-        </div>
-        <div class="col">
-          <a target="blank" href="https://vimeo.com/kamehamehamusic">
-            <span class="social-icon vimeo-icon"></span>
-          </a>
-        </div>
-        <div class="col">
-          <a target="blank" href="https://www.youtube.com/channel/UCBTjnqz-iPPQVd7qrE0iWuQ">
-            <span class="social-icon youtube-icon"></span>
-          </a>
-        </div>
-      </div>
+  <footer>
+    <div class="footer-item">
+      <a target="blank" href="https://instagram.com/kamehamehamusic">
+        <span class="social-icon instagram-icon"></span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a target="blank" href="https://www.facebook.com/kamehamehamusic/">
+        <span class="social-icon facebook-icon"></span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a target="blank" href="https://twitter.com/kamehamehamusic">
+        <span class="social-icon twitter-icon"></span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a target="blank" href="https://vimeo.com/kamehamehamusic">
+        <span class="social-icon vimeo-icon"></span>
+      </a>
+    </div>
+    <div class="footer-item">
+      <a target="blank" href="https://www.youtube.com/channel/UCBTjnqz-iPPQVd7qrE0iWuQ">
+        <span class="social-icon youtube-icon"></span>
+      </a>
     </div>
   </footer>
 
-
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/index.js"></script>
 
 </body>

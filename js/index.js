@@ -1,5 +1,3 @@
-(function($) {
-
   /** * Returns a random integer between min (inclusive) and max
    * (inclusive) * Using Math.round() will give you a non-uniform
    * distribution!  */
@@ -19,32 +17,29 @@
     return 'video/bg-vid-' + idx + '.mp4';
   }
 
-  var maxIndex = 360;
-  var startIndex = 197;
-  var video = document.getElementById('bgvid');
-  var prev = document.createElement('source');
-  var curr = document.createElement('source');
+  document.addEventListener("DOMContentLoaded", function(event) {
 
-  curr.setAttribute('src', getVideoSrc(startIndex));
+    var maxIndex = 360;
+    var startIndex = 197;
+    var video = document.getElementById('bgvid');
+    var prev = document.createElement('source');
+    var curr = document.createElement('source');
 
-  video.appendChild(curr);
-  video.appendChild(prev);
-  video.play();
+    curr.setAttribute('src', getVideoSrc(startIndex));
 
-  setInterval(function() {
-    video.pause();
-    var vidId = getRandomInt(0, 360);
-    var tmp = curr;
-    curr = prev;
-    prev = tmp;
-    curr.setAttribute('src', getVideoSrc(vidId.pad(3)));
-
-    video.load();
+    video.appendChild(curr);
+    video.appendChild(prev);
     video.play();
-  }, 8000);
-  $(function() {
 
-    $('.button-collapse').sideNav();
+    setInterval(function() {
+      video.pause();
+      var vidId = getRandomInt(0, 360);
+      var tmp = curr;
+      curr = prev;
+      prev = tmp;
+      curr.setAttribute('src', getVideoSrc(vidId.pad(3)));
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+      video.load();
+      video.play();
+    }, 8000);
+  });

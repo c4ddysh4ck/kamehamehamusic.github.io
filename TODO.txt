@@ -1,0 +1,4 @@
+favicon
+OG description
+twitter card
+mobile responsive
