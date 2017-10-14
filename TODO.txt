@@ -1,4 +1,3 @@
 favicon
-OG description
-twitter card
+OG & twitter description
 mobile responsive

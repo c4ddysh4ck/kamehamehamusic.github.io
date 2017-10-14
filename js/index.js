@@ -22,22 +22,17 @@
     var maxIndex = 360;
     var startIndex = 197;
     var video = document.getElementById('bgvid');
-    var prev = document.createElement('source');
-    var curr = document.createElement('source');
+    var source = document.createElement('source');
 
-    curr.setAttribute('src', getVideoSrc(startIndex));
+    source.setAttribute('src', getVideoSrc(startIndex));
 
-    video.appendChild(curr);
-    video.appendChild(prev);
+    video.appendChild(source);
     video.play();
 
     setInterval(function() {
       video.pause();
       var vidId = getRandomInt(0, 360);
-      var tmp = curr;
-      curr = prev;
-      prev = tmp;
-      curr.setAttribute('src', getVideoSrc(vidId.pad(3)));
+      source.setAttribute('src', getVideoSrc(vidId.pad(3)));
 
       video.load();
       video.play();

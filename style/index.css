@@ -49,7 +49,8 @@ a:hover {
 
 @media screen and (max-device-width: 425px) {
   #title {
-    font-size: 2rem;
+    font-size: 2.8rem;
+    letter-spacing: 0.332rem;
   }
   #nav-container {
     flex-direction: column;
@@ -58,16 +59,13 @@ a:hover {
   .nav-item {
     margin-right: 0px;
     margin-top: 5px;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (max-device-width: 400px) {
   #title {
-    font-size: 1.3rem;
-  }
-  .nav-item {
-    font-size: .7rem;
+    font-size: 2.5rem;
   }
 }
 
