@@ -44,7 +44,8 @@ a:hover {
   font-size: 1.66rem;
   font-weight: bold;
   letter-spacing: 0.416rem;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 main {
