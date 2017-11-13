@@ -65,9 +65,17 @@ main {
 
 #mammals-img-container {
   display: flex;
+  flex-direction: column;
   min-height: 70vh;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+}
+
+#ytplayer {
+  padding-top: 15px;
+  width: 90%;
+  max-width: 640px;
+  height: 360px;
 }
 
 #mammals-img {
@@ -103,6 +111,9 @@ video#bgvid {
 }
 
 @media screen and (max-device-width: 425px) {
+  #ytplayer {
+    height: 240px;
+  }
   #title {
     font-size: 2.8rem;
     letter-spacing: 0.332rem;
