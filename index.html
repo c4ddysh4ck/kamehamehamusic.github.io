@@ -78,16 +78,18 @@
 <body>
   <video controls="true" playsinline autoplay muted loop poster="img/video-placeholder.png"
     id="bgvid" type="video/mp4">
-      </video>
+  </video>
   <nav>
-    <div href="#" id="title" class="center uppercase">
-      kamehameha
+    <div id="title" class="center uppercase">
+      <a id="index-link" href="#">
+        kamehameha
+      </a>
     </div>
     </div>
     <div id="nav-container" class="uppercase center">
-      <div class="nav-item"><a href="https://soundcloud.com/kamehamehamusic">music</a></div>
+      <div class="nav-item"><a id="music-link" href="#music">music</a></div>
       <div class="nav-item"><a href="#">tour</a></div>
-      <div class="nav-item"><a href="https://kamehamehamusic.bandcamp.com">shop</a></div>
+      <div class="nav-item"><a target="_blank" href="https://kamehamehamusic.bandcamp.com/album/mammals">shop</a></div>
       <div class="nav-item"><a href="mailto:kamehameha.nyc@gmail.com">contact</a></div>
     </div>
   </nav>
@@ -96,6 +98,36 @@
       <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/e66f8nyAf3s"
         frameborder="0"></iframe>
       <embed id="mammals-img" src="img/mammals.svg" />
+      <div id="out-now" class="nav-item uppercase"> Out Now </div>
+    </div>
+    <div id="music-container">
+      <div class="logo-container">
+        <iframe src="https://open.spotify.com/embed?uri=spotify:album:5yy6JaM5yhF7EZdmwW9T3Y"
+          width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+      </div>
+      <div class="logo-container">
+        <a target="_blank" href='https://play.google.com/store/music/album/Kamehameha_Mammals?id=Bflnvw3gomfgjrtkgyolhqxy2ce&hl=en&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-mu-PartBadge-Mar2515-1'>
+          <img alt='Listen on Google Play Music' class="music-logo" id="google-logo" src='https://play.google.com/intl/en_us/badges-music/images/badges/en_badge_web_music.png'
+          />
+        </a>
+        <a target="_blank" href="https://kamehamehamusic.bandcamp.com/album/mammals">
+          <img id="bandcamp-logo" src="/img/music/bandcamp.png" class="music-logo" />
+        </a>
+      </div>
+      <div class="logo-container">
+        <a target="_blank" href="https://itunes.apple.com/us/album/mammals/1318320742">
+          <img id="apple-logo" src="img/music/apple.svg" class="music-logo" />
+        </a>
+        <a target="_blank" href="https://store.cdbaby.com/cd/kamehameha2">
+          <img id="cdbaby-logo" src="/img/music/cdbaby.gif" class="music-logo" />
+        </a>
+      </div>
+      <div class="logo-container">
+        <a target="_blank" href=" https://www.amazon.com/Mammals-Kamehameha/dp/B077W7PSJ2/ref=sr_1_2?ie=UTF8&qid=1512328200&sr=8-2&keywords=kamehameha+-+mammals">
+          <img id="amazon-logo" src="img/music/amazon.png" class="music-logo">
+        </a>
+        <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fkamehamehamusic%2Fsets%2Fmammals&color=black_white&size=48" style="width: 48px; height: 48px;"></iframe>
+      </div>
     </div>
   </main>
 
